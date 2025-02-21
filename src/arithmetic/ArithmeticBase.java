@@ -17,14 +17,17 @@ public class ArithmeticBase
 {
     public enum TestEnum{
         PLUS(1),
-        MINUS(2);
+        MINUS(2),
+        TIMES(3),
+        DIVIDE(4);
     private int numVal;
     TestEnum(int numVal) {
         this.numVal = numVal;
     }
     public int getNumVal() {
         return numVal;
-    }}
+    }} //I wanted this to be able to select the operation based off of a number from 1-4, however i ran out of time before i was able to inplement
+    // the selection system based on user input, as i was having trouble with it.
  public double x,y;
     double calculate(double x, double y) 
         {
