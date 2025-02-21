@@ -15,6 +15,16 @@ import java.util.Scanner;
  */
 public class ArithmeticBase 
 {
+    public enum TestEnum{
+        PLUS(1),
+        MINUS(2);
+    private int numVal;
+    TestEnum(int numVal) {
+        this.numVal = numVal;
+    }
+    public int getNumVal() {
+        return numVal;
+    }}
  public double x,y;
     double calculate(double x, double y) 
         {
